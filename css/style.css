@@ -1,0 +1,45 @@
+.intro-header{
+	background: url(../img/Bankoboev.Ru_rabochee_mesto_vse_dlya_produktivnoi_deyatelnosti.jpg) no-repeat center center;
+		padding-top: 310px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 310px;
+		background-size: cover;
+}
+
+.logo{
+	margin-bottom: 50px;
+	margin-left: 470px;
+}
+
+h1{
+	color:#fff;
+}
+
+#clientes{
+	background-color: #ebebeb;
+	padding: 90px 20px;
+}
+
+#empleados{
+ background-color: rgb(246, 245, 243);
+	padding: 90px 20px;
+}
+
+.hr-class{
+	width: 180px;
+	border:2px solid #5bc0de;
+}
+
+.hr-class1{
+	width: 320px;
+	border:2px solid #428bca;
+}
+footer{
+	padding-top: 30px;
+	margin-top: -20px;
+	background-color: #6495ED;
+	height: 200px;
+}
+
+footer h3{
+	color:#fff;
+}

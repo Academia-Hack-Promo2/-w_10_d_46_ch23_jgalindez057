@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contador</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script src="js/reto1.js"></script>
+	<header>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="intro-header">
+					<img class="logo" src="img/descarga.png" height="190" width="360" alt="">
+					<h1 class="text-center">Nuestro principal objetivo: ¡Ser Rapido!</h1>
+			<div class="container text-center">
+				<a href="#clientes">
+					<button type="button" class="btn btn-primary btn-lg">Clientes</button>
+					</a>
+				<a href="#empleados">
+					<button type="button" class="btn btn-primary btn-lg">Empleados</button>
+					</a>
+
+			</div>
+				</div> 
+			</div>
+		</div>
+	</header>
+
+	<section id="clientes"> 
+		<div class="container">
+		<h2 class="text-center"><strong>Seleccione su ticket</strong></h2>
+		<hr class="hr-class1">
+		<h3 class="text-center">Sientase comodo, sientase en casa</h3> <br><br>
+			<div class="col-md-3">
+				<h3 class="text-center">Operaciones en taquilla</h3><br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sint nam temporibus nulla. Corporis fuga consequatur, nesciunt quibusdam illo, eveniet molestias, tempora nam ex perferendis est. Totam illum beatae, architecto.</p>
+				<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary text-center" onclick="operaciones_en_taquilla()" data-toggle="modal" data-target="#myModal">
+  Click Aqui
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        	<div id="colaop" >Cola Operaciones</div>
+	<div id="turnop" >Tiempo Estimado</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+			</div>
+			<div class="col-md-3">
+				<h3 class="text-center">Operaciones en taquilla (3era Edad)</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sint nam temporibus nulla. Corporis fuga consequatur, nesciunt quibusdam illo, eveniet molestias, tempora nam ex perferendis est. Totam illum beatae, architecto.</p>
+				<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" onclick="operaciones_taquilla_3()" data-toggle="modal" data-target="#myModal2">
+  Click Aqui
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div id="operaciones(3era)" >Cola Operaciones (3ra edad)</div>
+	<div id="turnoop3" >Tiempo estimado (3era edad)</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+			<div class="col-md-3">
+				<h3 class="text-center">Atencion al cliente</h3><br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sint nam temporibus nulla. Corporis fuga consequatur, nesciunt quibusdam illo, eveniet molestias, tempora nam ex perferendis est. Totam illum beatae, architecto.</p>
+<button type="button" class="btn btn-primary" onclick="atencion_al_cliente()" data-toggle="modal" data-target="#myModal3">
+  Click Aqui
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+   
+	<div id="colaat" >Cola Atencion al cliente</div>
+	<div id="turnoat" >Tiempo Estimado</div> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+			<div class="col-md-3">
+				<h3 class="text-center">Atencion al Cliente (3era Edad)</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sint nam temporibus nulla. Corporis fuga consequatur, nesciunt quibusdam illo, eveniet molestias, tempora nam ex perferendis est. Totam illum beatae, architecto.</p>
+
+
+				<button type="button" class="btn btn-primary" onclick="atencion_al_cliente3()" data-toggle="modal" data-target="#myModal4">
+  Click Aqui
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+   	<div id="colaat3" >Cola Atencion al cliente</div>
+	<div id="turnoat3" >Tiempo Estimado</div> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="empleados">
+		<div class="container">
+			<h2 class="text-center">
+				<strong>Empleados</strong>
+				<hr class="hr-class">
+			</h2>
+			<h3 class="text-center">El Orden es lo primero</h3> <br><br>
+			<div class="col-md-3">
+				
+<h3 class="text-center">Operaciones en taquilla</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sint nam temporibus nulla. Corporis fuga consequatur, nesciunt quibusdam illo, eveniet molestias, tempora nam ex perferendis est. Totam illum beatae, architecto.</p>
+				<button type="button" class="btn btn-info" onclick="operacionestaquilla()" data-toggle="modal" data-target="#myModal5">
+  Click Aqui
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+	<div id="dropop">Llamando clientes</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+			<div class="col-md-3">
+				<h3 class="text-center">Operaciones en taquilla (3era Edad)</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sint nam temporibus nulla. Corporis fuga consequatur, nesciunt quibusdam illo, eveniet molestias, tempora nam ex perferendis est. Totam illum beatae, architecto.</p>
+				<button type="button" class="btn btn-info" onclick="operacionestaquilla3()" data-toggle="modal" data-target="#myModal6">
+  Click Aqui
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+		<div id="dropop3" >Llamando clientes (3ra edad)</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+		
+			</div>
+			<div class="col-md-3">
+								<h3 class="text-center">Atencion al cliente</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sint nam temporibus nulla. Corporis fuga consequatur, nesciunt quibusdam illo, eveniet molestias, tempora nam ex perferendis est. Totam illum beatae, architecto.</p>
+				<button type="button" class="btn btn-info" onclick="atencioncliente()" data-toggle="modal" data-target="#myModal7">
+  Click Aqui
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+	<div id="dropat" >Llamando clientes</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+			<div class="col-md-3">
+				<h3 class="text-center">Atencion al cliente (3era Edad)</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sint nam temporibus nulla. Corporis fuga consequatur, nesciunt quibusdam illo, eveniet molestias, tempora nam ex perferendis est. Totam illum beatae, architecto.</p>
+				<button type="button" class="btn btn-info" onclick="atencioncliente3()" data-toggle="modal" data-target="#myModal8">
+  Click Aqui
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+
+	<div id="dropat3" >Llamando clientes</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<h3 class="text-center">
+			“Compra solamente lo necesario, no lo conveniente. Lo innecesario, aunque cueste un solo céntimo, es caro” <br> <br> -Séneca 
+		</h3>
+	</footer>
+
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
